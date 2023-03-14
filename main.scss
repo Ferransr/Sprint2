@@ -1,0 +1,18 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+
+header {
+    background-color: white;
+}
+
+$primary: #fca311;
+$secondary: #14213d;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary
+);
+
+
+
+// background-color: #fca311;
+//     background-color: #14213d;
