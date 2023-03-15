@@ -1,18 +1,36 @@
-@import "node_modules/bootstrap/scss/bootstrap";
-
-header {
-    background-color: white;
-}
-
 $primary: #fca311;
 $secondary: #14213d;
 
-$theme-colors: (
-  "primary": $primary,
-  "secondary": $secondary
-);
+header {
+  background-color: white;
+  margin-top: 6rem;
+  margin-left: 8rem;
+  margin-right: 8rem;
+}
+
+.main-buttons {
+  display: flex;
+  gap: 2vh;
+}
+
+.bookmark {
+  margin-top: 10rem;
+  margin-left: 10rem;
+  margin-right: 7rem;
+}
+
+.features {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.btn:hover {
+  text-decoration: underline;
+  border-bottom: 2px solid;
+}
 
 
 
-// background-color: #fca311;
-//     background-color: #14213d;
+
+
+@import "node_modules/bootstrap/scss/bootstrap";

@@ -1,53 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sprint2</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="main.css">
-</head>
-<body>
-<header class="sticky-top">
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <div class="container-fluid">
-      <a href="">
-        <img src="/Imagenes/logo-bookmark.svg" class="img-fluid" alt="Responsive image">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Download</a>
-          </li>
-          <button type="button" class="btn btn-danger shadow">LOGIN</button>
-        </ul>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid ms-5">
+          <a href="">
+            <img
+              src="/Imagenes/logo-bookmark.svg"
+              class="img-fluid"
+              alt="Responsive image"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Download</a>
+              </li>
+              <button type="button" class="btn btn-primary shadow">
+                LOGIN
+              </button>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="bookmark">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-4">
+            <h3>A Simple Bookmark Manager</h3>
+            <p>
+              A clean and simple interface to organize your favourite websites.
+              Open a new browser tab and see your sites load instantly. Try it
+              for free
+            </p>
+            <div class="main-buttons">
+              <button type="button" class="btn btn-primary text-nowrap">
+                Get it on Chrome
+              </button>
+              <button type="button" class="btn btn-primary text-nowrap">
+                Get it on Firefox
+              </button>
+            </div>
+          </div>
+          <div class="col-xl-8">
+            <img
+              class="img-fluid d-block"
+              src="/Imagenes/illustration-hero.svg"
+              style="width: 700px"
+              alt="image"
+            />
+          </div>
+        </div>
       </div>
     </div>
-  </nav>
-</header>
+    <div class="features">
+      <div class="row">
+        <div class="col-12 col-sm-4"></div>
+        <div class="col-12 col-sm-4">
+          <h3>Features</h3>
+          <p>
+            Our aim is to make it quick and easy for you to access your
+            favourite websites. Your bookmarks sync between your devices so you
+            can access them on the go.
+          </p>
+        </div>
+        <div class="col-12 col-sm-4"></div>
+      </div>
+    </div>
 
-<div class="container">
-  <h1 class="">A Simple Bookmark <br>Manager</h1>
-  <div class="col-12 col-lg-4 p-2">
-    <p>A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free</p>
-  </div>
-  <div class="col-md-4" style="d-flex justify-content-end;">
-      <img src="/Imagenes/illustration-hero.svg" class="img-responsive">
-  </div>
-</div>
-
+    <ul class="nav nav-pills nav-fill">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Active</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Much longer nav link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+    </ul>
+    <!-- <div class="container-fluid">
+  <div class="row d-flex ms-5 p-5">
+    
+    <div class="col-12 col-lg-4 float-left">
+        <h1 class="">A Simple Bookmark <br>Manager</h1>
+        <p>A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free</p>
+      </div>
   
-  <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="col-12 col-lg-6 float-right">
+      <img src="/Imagenes/illustration-hero.svg" style="width: 500px;" class="img-responsive ">
+    </div>
+  </div>
+</div> -->
+
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Navbar</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -71,7 +148,7 @@
     </div>
   </nav> -->
 
-<!-- <nav class="navbar navbar-expand-md navbar-light ps-4 pe-4">
+    <!-- <nav class="navbar navbar-expand-md navbar-light ps-4 pe-4">
     <a href="">
       <img src="/Imagenes/logo-bookmark.svg" class="img-fluid" alt="Responsive image">
     </a>
@@ -96,7 +173,6 @@
         </div>
     </div>
 </nav> -->
-<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
 </html>
