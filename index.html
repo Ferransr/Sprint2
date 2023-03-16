@@ -46,7 +46,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Download</a>
               </li>
-              <button type="button" class="btn btn-primary shadow">
+              <button type="button" class="btn btn-danger shadow">
                 LOGIN
               </button>
             </ul>
@@ -99,40 +99,53 @@
       </div>
     </div>
 
-    <div class="tab">
-      
-      <ul class="nav justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link active fw-bold" aria-current="page" href="#"
-            >Simple Bookmarking</a
-          >
+    <section class="feature-tabs">
+      <ul class="nav justify-content-center" >
+        <li class="nav-item" >
+          <a id="home-tab" class="nav-link active fw-bold text-dark" data-bs-toggle="tab" data-bs-target="#home" 
+             aria-controls="home" aria-selected="true">Bookmarking in one click</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link fw-bold" href="#">Speedy Searching</a>
+        <li class="nav-item" >
+          <a class="nav-link fw-bold text-dark" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" 
+             aria-controls="profile" aria-selected="false">Speedy Searching</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link fw-bold" href="#">Easy Sharing</a>
+        <li class="nav-item" >
+          <a class="nav-link fw-bold text-dark" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" 
+             aria-controls="contact" aria-selected="false">Easy Sharing</a>
         </li>
       </ul>
-      
-    </div>
-
-    <div class="ejemplo justify-content-center">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, <br />
-        adipisci earum amet error, br illum obcaecati doloremque sint ratione
-        deserunt architecto veritatis dolores esse. <br />Deleniti cum aut quasi
-        quidem ea. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Sequi, <br />
-        adipisci earum amet error, br illum obcaecati doloremque sint ratione
-        deserunt architecto veritatis dolores esse. <br />Deleniti cum aut quasi
-        quidem ea.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Sequi, <br />
-        adipisci earum amet error, br illum obcaecati doloremque sint ratione
-        deserunt architecto veritatis dolores esse. <br />Deleniti cum aut quasi
-        quidem ea.
-      </p>
-    </div>
+  
+      <div class="tab-content d-flex justify-content-center" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <h1>Bookmark in one click</h1>
+          <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+          
+            <div class="container">
+              <div class="row">
+                <div class="col-xl-7">
+                  <button type="button" class="btn btn-primary text-nowrap">More info</button>
+                </div>
+                <div class="col-xl-5">
+                  <img
+                    class="img-fluid d-block"
+                    src="/Imagenes/illustration-hero.svg"
+                    style="width: 700px"
+                    alt="image"
+                  />
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="tab-pane fade justify-content-center" id="profile" role="tabpanel" aria-labelledby="profile-tab">Searching is simply dummy
+          text of the printing and typesetting industry. Lorem Ipsum has been
+          the industry's standard dummy text ever since the 1500s, when an unknown printer
+          took a galley of type and scrambled it to make a type specimen book.</div>
+        <div class="tab-pane fade justify-content-center" id="contact" role="tabpanel" aria-labelledby="contact-tab">Sharing is simply dummy text
+          of the printing and typesetting industry. Lorem Ipsum has been
+          the industry's standard dummy text ever since the 1500s, when an unknown printer
+          took a galley of type and scrambled it to make a type specimen book.</div>
+      </div>
+    </section>
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   </body>
