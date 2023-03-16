@@ -29,7 +29,31 @@ header {
   border-bottom: 2px solid;
 }
 
+.tab {
+  margin-top: 2rem;
+}
 
+.nav-link:hover {
+  text-decoration: underLine;
+  border-bottom: 4px solid rgb(255, 0, 0);
+  text-decoration: none;
+  }
+
+  .nav-link::after {
+  content: '';
+  opacity: 0;
+  transition: all 0.2s;
+  height: 2px;
+  
+  background-color: rgb(255, 0, 0);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  }
+
+  .nav-link:hover::after {
+  opacity: 1;
+  }
 
 
 
