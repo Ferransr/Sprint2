@@ -37,27 +37,26 @@ header {
   text-decoration: underLine;
   border-bottom: 4px solid rgb(255, 0, 0);
   text-decoration: none;
-  }
+}
 
-  .nav-link::after {
+.nav-link:after {
   content: '';
   opacity: 0;
   transition: all 0.2s;
   height: 2px;
-  
+  width: 100%;
   background-color: rgb(255, 0, 0);
   position: absolute;
   bottom: 0;
   left: 0;
-  }
+}
 
-  .nav-link:hover::after {
-  opacity: 1;
-  }
+.nav-link:hover::after {
+opacity: 1;
+}
 
-  .tab-content {
-    margin-top: 8rem;
-  }
-
+.tab-content {
+  margin-top: 8rem;
+}
 
 @import "node_modules/bootstrap/scss/bootstrap";
