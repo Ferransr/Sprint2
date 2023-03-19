@@ -22,11 +22,6 @@ header {
   text-align: center;
 }
 
-.btn:hover {
-  text-decoration: underline;
-  border-bottom: 2px solid;
-}
-
 .tab {
   margin-top: 2rem;
 }
@@ -51,7 +46,7 @@ header {
 }
 
 .nav-link:hover::after {
-  opacity: 1;
+  opacity: 0;
 }
 
 .tab-content {
