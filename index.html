@@ -16,48 +16,36 @@
   <body>
     <header class="sticky-top">
       <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid ms-5">
-          <a href="">
-            <img
-              src="/Imagenes/logo-bookmark.svg"
-              class="img-fluid"
-              alt="Responsive image"
-            />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-          >
+        <div class="container-fluid">
+          <img class="header-logo" src="Imagenes/logo-bookmark.svg" alt="bookmark logo">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarNav"
-          >
-            <ul class="navbar-nav">
+  
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav d-flex align-items-end">
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link fw-bold" aria-current="page" href="#">Features</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link fw-bold" href="#">Pricing</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Download</a>
+                <a class="nav-link fw-bold" href="#">Contact</a>
               </li>
-              <button type="button" class="btn btn-danger shadow">
-                LOGIN
-              </button>
+              <li>
+                <button class="btn btn-primary">Login</button>
+              </li>
             </ul>
+  
           </div>
         </div>
       </nav>
     </header>
     <div class="bookmark">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-4 mb-5">
+      <div class="container d-flex justify-content-center">
+        <div class="row d-flex">
+          <div class="col-sm-4 mb-5">
             <h1>A Simple Bookmark Manager</h1>
             <p>
               A clean and simple interface to organize your favourite websites.
@@ -75,15 +63,26 @@
           </div>
           <div class="col-xl-8">
             <img
-              class="img-fluid d-block mx-auto"
+              class="img-fluid d-block"
               src="/Imagenes/illustration-hero.svg"
               alt="image"
             />
+            <!-- <div class="col">
+              <div
+                class="rounded-pill bg-primary .d-none .d-sm-block"
+                style="
+                  margin-top: -300px;
+                  margin-right: -500px;
+                  margin-left: -50px;
+                  height: 350px;
+                "
+              ></div>
+            </div> -->
           </div>
         </div>
       </div>
     </div>
-    <div class="features">
+    <div class="features mt-5">
       <div class="row">
         <div class="col-sm-4"></div>
         <div class="col-sm-4">
@@ -98,82 +97,84 @@
       </div>
     </div>
 
-    <section class="feature-tabs mt-4 mb-5">
-      <ul class="nav justify-content-center" >
-        <li class="nav-item" >
-          <a id="home-tab" class="nav-link active fw-bold text-dark" data-bs-toggle="tab" data-bs-target="#home" 
-             aria-controls="home" aria-selected="true">Bookmarking in one click</a>
-        </li>
-        <li class="nav-item" >
-          <a class="nav-link fw-bold text-dark" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" 
-             aria-controls="profile" aria-selected="false">Speedy Searching</a>
-        </li>
-        <li class="nav-item" >
-          <a class="nav-link fw-bold text-dark" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" 
-             aria-controls="contact" aria-selected="false">Easy Sharing</a>
-        </li>
-      </ul>
-  
-      <div class="tab-content d-flex justify-content-center" id="myTabContent">
-        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-            <div class="container-fluid d-flex">
-              <div class="row">
-                <div class="col-xl-2"></div>
-                <div class="col-xl-4 mb-5">
-                  <img class="img-fluid d-block mx-auto" src="/Imagenes/illustration-features-tab-1.svg" alt="image"/>
-                </div>
-                <div class="col-xl-4 mx-auto">
-                  <h3>Bookmark in one click</h3>
-                  <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
-                  <button type="button" class="btn btn-primary text-nowrap">More info</button>
-                </div>
-              </div>
-            </div>
-        </div>
+   <section class="feature-tabs mt-5">
+    <ul class="nav justify-content-center mb-5">
+      <li class="nav-item ">
+        <a id="bookmarking-tab" class="nav-link active fw-bold" data-bs-toggle="tab" data-bs-target="#bookmarking"
+          aria-controls="bookmarking" aria-selected="true">Simple Bookmarking</a>
+      </li>
+      <li class="nav-item">
+        <a id="searching-tab" class="nav-link fw-bold" data-bs-toggle="tab" data-bs-target="#searching"
+          aria-controls="searching" aria-selected="false">Speedy Searching</a>
+      </li>
+      <li class="nav-item">
+        <a id="sharing-tab" class="nav-link fw-bold" data-bs-toggle="tab" data-bs-target="#sharing"
+          aria-controls="sharing" aria-selected="false">Easy Sharing</a>
+      </li>
+    </ul>
 
-        <div class="tab-pane fade justify-content-center" id="profile">
-          <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-              <div class="container-fluid d-flex">
-                <div class="row">
-                  <div class="col-xl-2"></div>
-                  <div class="col-xl-4 mb-5">
-                    <img class="img-fluid d-block mx-auto" src="/Imagenes/illustration-features-tab-2.svg" alt="image" />
-                  </div>
-                  <div class="col-xl-4 mx-auto">
-                    <h3>Speedy Searching</h3>
-                    <p>Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all iof your bookmarks.</p>
-                    <button type="button" class="btn btn-primary text-nowrap">More info</button>
-                  </div>
-                </div>
-              </div>
+    <div class="tab-content d-flex justify-content-center" id="myTabContent">
+      <div class="tab-pane fade show active" id="bookmarking" role="tabpanel" aria-labelledby="bookmarking-tab">
+        <div class="container-fluid d-flex">
+          <div class="row">
+            <div class="col-xl-2"></div>
+            <div class="col-xl-4 mb-5">
+              <img class="img d-block mx-auto" src="/Imagenes/illustration-features-tab-1.svg" alt="image" />              
+            </div>
+            <div class="col-sm-4 mx-auto">
+              <h3>Bookmark in one click</h3>
+              <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control
+                over how you manage your favourite sites.</p>
+              <button type="button" class="btn btn-primary text-nowrap">More info</button>
+            </div>
           </div>
         </div>
+      </div>
 
-          <div class="tab-pane fade justify-content-center" id="contact">
-            <div class="tab-pane fade show active" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                <div class="container-fluid d-flex">
-                  <div class="row">
-                    <div class="col-xl-2"></div>
-                    <div class="col-xl-4 mb-5">
-                      <img class="img-fluid d-block mx-auto" src="/Imagenes/illustration-features-tab-3.svg" alt="image" />
-                    </div>
-                    <div class="col-xl-4 mx-auto">
-                      <h3>Easy Searching</h3>
-                      <p>Easily share your bookmarks and collections with others. Create a shareable link that you send at the click of a button</p>
-                      <button type="button" class="btn btn-primary text-nowrap">More info</button>
-                    </div>
-                  </div>
-                </div>
+      <div class="tab-pane fade justify-content-center" id="searching">
+        <div class="tab-pane fade show active" id="searching" role="tabpanel" aria-labelledby="searching-tab">
+          <div class="container-fluid d-flex">
+            <div class="row">
+              <div class="col-xl-2"></div>
+              <div class="col-xl-4 mb-5">
+                <img class="img-fluid d-block mx-auto" src="/Imagenes/illustration-features-tab-2.svg" alt="image" />
+              </div>
+              <div class="col-xl-4 mx-auto">
+                <h3>Speedy Searching</h3>
+                <p>Our powerful search feature will help you find saved sites in no time at all. No need to trawl
+                  through all iof your bookmarks.</p>
+                <button type="button" class="btn btn-primary text-nowrap">More info</button>
+              </div>
             </div>
-          </div> 
+          </div>
+        </div>
+      </div>
 
-      </div>      
+      <div class="tab-pane fade justify-content-center" id="sharing">
+        <div class="tab-pane fade show active" id="sharing" role="tabpanel" aria-labelledby="sharing-tab">
+          <div class="container-fluid d-flex">
+            <div class="row">
+              <div class="col-xl-2"></div>
+              <div class="col-xl-4 mb-5">
+                <img class="img-fluid d-block mx-auto" src="/Imagenes/illustration-features-tab-3.svg" alt="image" />
+              </div>
+              <div class="col-xl-4 mx-auto">
+                <h3>Easy Searching</h3>
+                <p>Easily share your bookmarks and collections with others. Create a shareable link that you send at the
+                  click of a button</p>
+                <button type="button" class="btn btn-primary text-nowrap">More info</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    </section>
+  </section>
 
     <div class="extension">
       <div class="row">
-        <div class="col-12 col-sm-4 mx-auto mt-5 mb-5">
+        <div class="col-sm-4 mx-auto mt-5 mb-5">
           <h3>Download the extension</h3>
           <p>
             Our aim is to make it quick and easy for you to access your
@@ -187,7 +188,7 @@
 
     <div class="container d-flex justify-content-center">
       <div class="row d-flex ">
-        <div class="col-xl-4">
+        <div class="col-sm-4">
           <div class="card shadow" style="width: auto">
             <img src="/Imagenes/logo-chrome.svg" class="mx-auto mt-3" alt="Chrome" style="width: 6rem; height: 6rem;">
             <div class="card-body">
@@ -199,7 +200,7 @@
           </div>
         </div>
 
-        <div class="col-xl-4 mt-4">
+        <div class="col-sm-4 mt-4">
           <div class="card shadow" style="width: auto">
             <img src="/Imagenes/logo-firefox.svg" class="mx-auto mt-3" alt="Firefox" style="width: 6rem; height: 6rem;">
             <div class="card-body">
@@ -211,7 +212,7 @@
           </div>
         </div>
 
-        <div class="col-xl-4 mt-5">
+        <div class="col-sm-4 mt-5">
           <div class="card shadow " style="width: auto">
             <img src="/Imagenes/logo-opera.svg" class="mx-auto mt-3" alt="Opera" style="width: 6rem; height: 6rem;">
             <div class="card-body">
@@ -243,8 +244,8 @@
 
     <div class="container">
       <div class="row justify-content-center mb-5">
-        <div class="col-md-5">
-          <div class="accordion" id="accordionExample">
+        <div class="col-md-6">
+          <div class="accordion accordion-flush" id="accordionExample">
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -253,7 +254,7 @@
               </h2>
               <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda omnis quibusdam esse facilis nisi asperiores quos doloremque laboriosam distinctio optio nihil, animi doloribus quaerat, voluptas quisquam, expedita aspernatur architecto. Accusamus?</p>
                 </div>
               </div>
             </div>
@@ -265,7 +266,7 @@
               </h2>
               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id sint, harum voluptatem asperiores quod maxime numquam expedita, libero vero sapiente deleniti, repudiandae inventore iusto facere doloremque nesciunt sed voluptatibus! Rerum.</p>
                 </div>
               </div>
             </div>
@@ -277,7 +278,7 @@
               </h2>
               <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab maiores explicabo, nisi impedit praesentium consequatur corrupti harum libero sapiente alias minima laborum nobis quidem ipsa odio eum accusantium excepturi? Sunt?</p>
                 </div>
               </div>
             </div>
@@ -289,7 +290,7 @@
               </h2>
               <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et maiores reiciendis dolor debitis commodi eius, sapiente minus magni officia mollitia at modi nisi ducimus aperiam qui. Natus, saepe qui? Veniam?</p>
                 </div>
               </div>
             </div>
@@ -299,10 +300,45 @@
     </div>
 
    
-    <div class="col-md-6 mx-auto text-center">
+    <div class="col-md-6 mx-auto text-center mb-5">
     <a class="btn btn-primary" href="" role="button">More Info</a>
     </div>
     
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xxl-12 mb-2 bg-info text-white" style="height: 25rem;">
+          <div class="col-12 mt-5 pt-4 text-center">
+            <h4 class="text-center">35.000+ ALREADY JOINED</h4>
+            <h2 class="text-center mt-5">Stay up-to-date with what <br>we're doing</h2>
+          </div>
+          <nav class="navbar">
+            <div class="container-fluid">
+              <form class="d-flex col-12 mx-auto mt-4" style="width: 30%;">
+                <input class="form-control me-2" type="search" placeholder="Enter your email adress." aria-label="Search">
+                <button type="button" class="btn btn-danger text-white text" type="submit" style="width: 10rem;">Contact Us</button>
+              </form>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <nav class="navbar navbar-expand-lg bg-secondary">
+        <div class="container-fluid">
+          
+          <img class="header-logo" src="Imagenes/logo-bookmark.svg" alt="bookmark logo">
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active text-white" aria-current="page" href="#">FEATURES</a>
+              <a class="nav-link text-white" href="#">PRICING</a>
+              <a class="nav-link text-white" href="#">CONTACT</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </footer>
 
     
 
