@@ -80,26 +80,6 @@ main {
   gap: 2vh;
 }
 
-.features-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 100%;
-  padding: 5vh 10vh 5vh 10vh;
-}
-
-.features-text h2, .features-text .h2 {
-  display: flex;
-  justify-content: space-around;
-}
-
-.features-text p {
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
-  padding: 5vh 30% 5vh 30%;
-}
-
 /*!
  * Bootstrap  v5.3.0-alpha1 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -4579,7 +4559,7 @@ textarea.form-control-lg {
   --bs-accordion-btn-padding-y: 1rem;
   --bs-accordion-btn-color: var(--bs-body-color);
   --bs-accordion-btn-bg: var(--bs-accordion-bg);
-  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='18' height='12'%3e%3cpath fill='none' stroke='%23fca311' stroke-width='3' d='M1 1l8 8 8-8'/%3e%3c/svg%3e");
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='18' height='12'%3e%3cpath fill='none' stroke='blue' stroke-width='3' d='M1 1l8 8 8-8'/%3e%3c/svg%3e");
   --bs-accordion-btn-icon-width: 1.25rem;
   --bs-accordion-btn-icon-transform: rotate(-180deg);
   --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
